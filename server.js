@@ -11,7 +11,7 @@ app.use(express.static(path.join(__dirname,'public')))
 
 
 app.use(express.json())
-const port=3000 || process.env.port
+const port= process.env.port  || 8080
 var user_data=[]
 
 app.post('/user_database',(req,res)=>{
